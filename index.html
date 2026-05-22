@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabajo de SMR - Placa Base y Linux</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #fcf8f2;
+        }
+        header {
+            background-color: #71d15e; 
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            background-color: #59b31d;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            margin: 5px;
+            font-weight: bold;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #afdfa6;
+        }
+        code {
+            background-color: #96cf8a;
+            padding: 3px;
+            font-family: monospace;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Proyecto Intermodular: Hardware y Sistemas Operativos</h1>
+        <p>Por: Javier Gutiérrez Amor - 1º SMR</p>
+    </header>
+
+    <nav>
+        <a href="#presentacion">Inicio</a>
+        <a href="#placa-base">Partes de la Placa Base</a>
+        <a href="#comandos-linux">Comandos de Linux</a>
+    </nav>
+
+    <section id="presentacion">
+        <h2>1. Introducción</h2>
+        <p>En esta página web vamos a explicar los componentes principales de una placa base (vistos en el módulo de Montaje) y los comandos para usar la terminal de Linux (vistos en el módulo de SOM).</p>
+    </section>
+
+    <section id="placa-base">
+        <h2>2. Componentes de la Placa Base</h2>
+        <p>La placa base es el elemento clave del ordenador. Aquí tienes una tabla con sus partes principales:</p>
+        
+        <table>
+            <tr>
+                <th>Componente</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td><strong>Socket</strong></td>
+                <td>Es el lugar donde se conecta la CPU.</td>
+            </tr>
+            <tr>
+                <td><strong>Slots RAM</strong></td>
+                <td>Conectores alargados donde se colocan los módulos de memoria RAM.</td>
+            </tr>
+            <tr>
+                <td><strong>PCI Express</strong></td>
+                <td>Sirven para conectar tarjetas adicionales, como la tarjeta gráfica o de red.</td>
+            </tr>
+            <tr>
+                <td><strong>Chipset</strong></td>
+                <td>Es el circuito integrado que ayuda al procesador a comunicarse con el resto de componentes.</td>
+            </tr>
+            <tr>
+                <td><strong>Puertos SATA / M.2</strong></td>
+                <td>Conexiones dedicadas para los discos HDD y SSD.</td>
+            </tr>
+            <tr>
+                <td><strong>Conector ATX</strong></td>
+                <td>Es el puerto grande por donde la fuente de alimentación le da energía a la placa base.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="comandos-linux">
+        <h2>3. Comandos de la Terminal de Linux</h2>
+        <p>Tabla de referencia con los comandos básicos que usamos en el día a día en SOM:</p>
+
+        <table>
+            <tr>
+                <th>Comando</th>
+                <th>¿Para qué sirve?</th>
+                <th>Ejemplo</th>
+            </tr>
+            <tr>
+                <td><code>ls</code></td>
+                <td>Listar los archivos y carpetas del directorio actual.</td>
+                <td><code>ls -l</code></td>
+            </tr>
+            <tr>
+                <td><code>cd</code></td>
+                <td>Cambiar de directorio.</td>
+                <td><code>cd Documentos</code></td>
+            </tr>
+            <tr>
+                <td><code>pwd</code></td>
+                <td>Mostrar la ruta de la carpeta en la que estás metido.</td>
+                <td><code>pwd</code></td>
+            </tr>
+            <tr>
+                <td><code>mkdir</code></td>
+                <td>Crear una carpeta nueva.</td>
+                <td><code>mkdir trabajos_smr</code></td>
+            </tr>
+            <tr>
+                <td><code>rm</code></td>
+                <td>Borrar un archivo.</td>
+                <td><code>rm apuntes.txt</code></td>
+            </tr>
+            <tr>
+                <td><code>sudo</code></td>
+                <td>Ejecutar comandos como administrador.</td>
+                <td><code>sudo apt update</code></td>
+            </tr>
+            <tr>
+                <td><code>clear</code></td>
+                <td>Limpiar la pantalla de la terminal si está muy llena.</td>
+                <td><code>clear</code></td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>Proyecto Intermodular 2025-2026</p>
+    </footer>
+
+</body>
+</html>
